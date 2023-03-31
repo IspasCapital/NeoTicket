@@ -1,6 +1,6 @@
 [
   {
-    "contract": "GasToken",
+    "contract": "NeoToken",
     "operation": "balanceOf",
     "args": [
       "#NeoTicket"

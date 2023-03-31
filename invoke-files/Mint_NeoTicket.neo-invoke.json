@@ -1,6 +1,6 @@
 [
   {
-    "contract": "NeoToken",
+    "contract": "NeoTicket",
     "operation": "transfer",
     "args": [
       "@Denis",
