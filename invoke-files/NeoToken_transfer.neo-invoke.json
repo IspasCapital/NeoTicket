@@ -1,0 +1,12 @@
+[
+  {
+    "contract": "NeoTicket",
+    "operation": "transfer",
+    "args": [
+      "@Denis",
+      "@contra",
+      100,
+      "none"
+    ]
+  }
+]

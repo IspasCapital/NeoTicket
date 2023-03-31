@@ -1,0 +1,9 @@
+base58>=1.0.3
+wheel>=0.30.0
+requests==2.28.2
+
+[dev]
+pycodestyle
+
+[test]
+coverage

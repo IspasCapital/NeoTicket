@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "MintNeoTicket",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}/NeoTicket.nef",
+            "neo-express":"${workspaceFolder}/default.neo-express",
+            "invocation": {
+                "contract":"NeoToken",
+                "operation":"transfer",
+                "args": [
+                    "@Denis",
+                    "#NeoTicket",
+                    10,
+                    "none"
+            ]
+            },
+            "storage": []
+        },
+        {
+            "name": "Burn",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}/NeoTicket.nef",
+            "neo-express":"${workspaceFolder}/default.neo-express",
+            "invocation": {
+                "operation": "burn",
+                "args": ["@Denis",10]
+            },
+            "storage": [],
+            "signers": ["@Denis"]
+        }
+    ]
+}
