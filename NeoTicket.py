@@ -35,9 +35,10 @@ def manifest_metadata() -> NeoMetadata:
 # TOKEN SETTINGS
 # -------------------------------------------
 
-# Script hash of the contract owner
+# Script hash of the contract owner 0xeb428477565154494255a832a5a6eb5d4c5d47c8
+# testnet contract scripthash 0x49b40e9152fe0f8a95e347e31994917ab9c5d0af
 
-OWNER = UInt160('NPtQK1RrR4FEJ7VCZ6pgGXa1C7dMbRi6UV'.to_bytes().to_script_hash())
+OWNER = UInt160('NeAwpcNfnXD2HbzUrnP8XJRmSfqTWyJvYV'.to_bytes().to_script_hash())
 SUPPLY_KEY = 'totalSupply'
 
 # Symbol of the Token

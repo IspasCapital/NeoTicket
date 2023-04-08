@@ -1,9 +1,7 @@
 [
   {
-    "contract": "NeoToken",
-    "operation": "balanceOf",
-    "args": [
-      "#NeoTicket"
-    ]
+    "contract": "NeoTicket",
+    "operation": "verify",
+    "args": []
   }
 ]
