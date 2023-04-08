@@ -36,7 +36,7 @@ def manifest_metadata() -> NeoMetadata:
 # -------------------------------------------
 
 
-OWNER = UInt160('NeAwpcNfnXD2HbzUrnP8XJRmSfqTWyJvYV'.to_bytes().to_script_hash())
+OWNER = UInt160()
 SUPPLY_KEY = 'totalSupply'
 
 # Symbol of the Token
