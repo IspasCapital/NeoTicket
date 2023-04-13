@@ -117,7 +117,7 @@
                     }
                 ],
                 "returntype": "Void",
-                "safe": true
+                "safe": false
             },
             {
                 "name": "verify",

@@ -36,7 +36,7 @@ def manifest_metadata() -> NeoMetadata:
 # -------------------------------------------
 
 
-OWNER = UInt160()
+OWNER = UInt160('NPtQK1RrR4FEJ7VCZ6pgGXa1C7dMbRi6UV'.to_script_hash())
 SUPPLY_KEY = 'totalSupply'
 
 # Symbol of the Token
@@ -239,7 +239,7 @@ def mint(account: UInt160, amount: int):
         else:
             abort()
 
-@public(safe=True)
+@public
 def burn(account: UInt160, amount: int):
     """
     Burns NeoTicket tokens.
