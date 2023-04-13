@@ -1,0 +1,9 @@
+[
+  {
+    "contract": "NeoToken",
+    "operation": "balanceOf",
+    "args": [
+      "#NeoTicket"
+    ]
+  }
+]

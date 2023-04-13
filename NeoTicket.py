@@ -270,7 +270,7 @@ def burn(account: UInt160, amount: int):
             on_transfer(account, None, amount)
             post_transfer(account, None, amount, None)
 
-            NEO_TOKEN.transfer(runtime.executing_script_hash, account, amount, None)
+            NEO_TOKEN.transfer(runtime.executing_script_hash, account, amount)
             
 @public
 def verify() -> bool:
