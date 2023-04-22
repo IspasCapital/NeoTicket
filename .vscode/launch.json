@@ -29,8 +29,9 @@
             "program": "${workspaceFolder}/NeoTicket.nef",
             "neo-express":"${workspaceFolder}/default.neo-express",
             "invocation": {
-                "operation": "transfer",
-                "args": ["@Denis","#NeoTicket",10,"none"]
+                "contract": "NeoTicket",
+                "operation": "burn",
+                "args": ["@Denis",10]
             },
             "storage": [],
             "signers": ["@Denis"]
