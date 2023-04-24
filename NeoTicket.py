@@ -64,8 +64,7 @@ on_transfer = Nep17TransferEvent
 @public
 def update(nef_file: bytes, manifest: bytes, data: Any = None):
     """
-    Updates the smart contract. In this example there is a bugged method, so, the smart contract will be updated to fix
-    the bug.
+    Updates the smart contract.
     """
     if runtime.check_witness(OWNER):
         ContractManagement.update(nef_file, manifest, data)
@@ -221,7 +220,7 @@ def mint(account: UInt160, amount: int):
 
     :param account: the address of the account that is sending cryptocurrency to this contract
     :type account: UInt160
-    :param amount: the amount of gas to be refunded
+    :param amount: the amount of Neo to be refunded
     :type amount: int
     :raise AssertionError: raised if amount is less than than 0
     """
@@ -270,7 +269,7 @@ def burn(account: UInt160, amount: int):
             on_transfer(account, None, amount)
             post_transfer(account, None, amount, None)
 
-            NEO_TOKEN.transfer(runtime.executing_script_hash, account, amount)
+            NEO_TOKEN.transfer(runtime.executing_script_hash, account, amount,None)
             
 @public
 def verify() -> bool:
@@ -314,8 +313,6 @@ def onNEP17Payment(from_address: UInt160, amount: int, data: Any):
         mint(from_address, amount)
     elif runtime.calling_script_hash == GAS_SCRIPT:
         return
-    elif runtime.calling_script_hash == runtime.executing_script_hash:
-        burn(from_address,amount)
     else:
         abort()
 

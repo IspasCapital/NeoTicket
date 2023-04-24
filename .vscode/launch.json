@@ -35,6 +35,22 @@
             },
             "storage": [],
             "signers": ["@Denis"]
-        }
+        },
+        {
+            "name": "NeoTransfer",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}/NeoTicket.nef",
+            "neo-express":"${workspaceFolder}/default.neo-express",
+            "invocation": {
+                "contract":"NeoTicket",
+                "operation":"voting_candidates",
+                "args": [
+                    "@Denis",
+                    "@Contra",
+                    10,]
+            },
+            "storage": []
+        },
     ]
 }
