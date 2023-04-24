@@ -1,12 +1,10 @@
 [
   {
     "contract": "NeoToken",
-    "operation": "transfer",
+    "operation": "burn",
     "args": [
       "@Denis",
-      "#NeoTicket",
-      10,
-      "none"
+      10
     ]
   }
 ]
